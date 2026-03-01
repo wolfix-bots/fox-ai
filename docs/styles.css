@@ -1,0 +1,14 @@
+:root{--bg:#0f1724;--card:#0b1320;--muted:#94a3b8;--accent:#f97316;--text:#e6eef8}
+*{box-sizing:border-box}html,body,#messages{height:100%}body{margin:0;font-family:Inter,system-ui,Arial,sans-serif;background:linear-gradient(180deg,#071028 0%,#0b1320 100%);color:var(--text);display:flex;align-items:center;justify-content:center;padding:20px}
+.app{width:100%;max-width:720px;height:640px;display:flex;flex-direction:column;background:linear-gradient(180deg,rgba(255,255,255,0.02),transparent);border-radius:12px;padding:16px;box-shadow:0 8px 30px rgba(2,6,23,0.6)}
+.header h1{margin:0;font-size:20px}
+.sub{margin:4px 0 12px;color:var(--muted);font-size:13px}
+.messages{flex:1;overflow:auto;padding:10px;display:flex;flex-direction:column;gap:8px}
+.msg{max-width:80%;padding:10px 12px;border-radius:10px;line-height:1.35}
+.msg.user{align-self:flex-end;background:linear-gradient(90deg,rgba(255,255,255,0.06),rgba(255,255,255,0.02));}
+.msg.assistant{align-self:flex-start;background:rgba(255,255,255,0.03);}
+.inputBar{display:flex;gap:8px;padding-top:10px}
+textarea{flex:1;resize:none;padding:10px;border-radius:10px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:var(--text);min-height:44px}
+button{background:var(--accent);border:none;color:#081021;padding:0 14px;border-radius:10px;font-weight:600;cursor:pointer}
+button:disabled{opacity:0.6;cursor:default}
+.loading{opacity:0.7;font-style:italic;color:var(--muted)}
